@@ -19,7 +19,10 @@ describe('Credit card application', () => {
       cy.get('.product-name').length > 0
 
       // Select limit
-
+      cy.get('.wp-c-form-slider .wp-c-form-input').clear()
+      cy.get('.wp-c-form-slider .wp-c-form-input').type('10000')
+      cy.contains('Select your card').click()
+      cy.get('.noUi-handle').invoke('attr', 'aria-valuenow').should('eq', '10000.0')
       // Select card based on option by creating custom function
     })
 })

@@ -4,7 +4,8 @@
   "description": "Practice tests with resuable functions and following best practices",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "author": "Vishnu",
   "license": "ISC",
