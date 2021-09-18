@@ -29,6 +29,9 @@ Cypress.Commands.add(
   "selectRadioOptionByText",
   { prevSubject: 'element' },
   (element, text) => {
-    cy.get(element).find(".wp-c-form-radio label").last().should("have.text", text).click();
+    cy.get(element).find(".wp-c-form-radio label").each(($item) => {
+      if ($item.text() == text) {
+        cy.wrap($item).should("have.text", text).click();
+    }
   }
-);
+)})
