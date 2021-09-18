@@ -1,0 +1,7 @@
+cypress/fixtures/example.json
+cypress/integration/1-getting-started/*
+cypress/integration/2-advanced-examples/*
+node_modules/
+cypress/videos
+.DS_Store
+cypress/.DS_Store
