@@ -25,7 +25,7 @@ describe('Credit card application', () => {
 })
 
 
-// Grouped funcitons
+// -------Grouped funcitons-----------------------
 function fillEligibilitySection() {
   // We use the `cy.get()` command to get all elements that match the selector.
   cy.get('#eligibilityCheck + label').click()
